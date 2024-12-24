@@ -1,42 +1,70 @@
-# CodeAnt-AI
-Developed a responsive, visually appealing frontend for CodeAnt AI's assignment. Delivered clean, modular code, implemented design requirements, and deployed the project live.
+# Getting Started with Create React App
 
-# Project Overview
-The assignment was provided by CodeAnt AI as part of the selection process for the Frontend Developer Intern position. The objective was to develop a fully functional frontend project based on the design and requirements shared by the company.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Key Features
-Responsiveness:
-The application is optimized for multiple screen sizes, ensuring a seamless experience across devices like desktops, tablets, and mobile phones.
+## Available Scripts
 
-# Clean Code:
-The project follows industry standards with clean, modular, and well-documented code, making it easy to understand, maintain, and scale.
+In the project directory, you can run:
 
-# Design Implementation:
-The design provided by CodeAnt AI was meticulously converted into an interactive and visually appealing frontend using modern frontend frameworks and techniques.
+### `npm start`
 
-# Deployment:
-The project has been successfully deployed and is accessible on a live server. This showcases the ability to deliver production-ready applications.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# Technologies Used
-Framework: [React.js]
-Styling: [CSS]
-Version Control: Git and GitHub
-Deployment Platform: [Firebase]
-Notable Techniques
-Utilized effective state management for dynamic behavior.
-Incorporated animations and transitions for a smooth user experience.
-Challenges and Solutions
-Challenge: Optimizing the UI for different screen sizes.
-Solution: Implemented a mobile-first design approach with flexible flex layouts and media queries.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Challenge: Maintaining code readability while handling complex components.
-Solution: Used reusable components and modularized CSS to keep the codebase structured and easy to debug.
+### `npm test`
 
-Conclusion
-The assignment for CodeAnt AI was a great opportunity to demonstrate my technical and design skills. By adhering to the requirements and delivering a responsive, well-optimized, and visually appealing project, I ensured it met industry standards and provided a seamless user experience.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Project Link
-Due to some techinical issues the the deployed page is not renderd one component but in the localhost its runnig verey smoothly and file render
-You can also check the code and run in local server too.
-Thank you.
-[https://codeant-ai-559b0.web.app/repositories]
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

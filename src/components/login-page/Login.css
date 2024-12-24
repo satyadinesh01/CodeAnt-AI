@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.login-hero{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(209, 160, 96); */
+    background-color: white;
+    border: 0px 1px 0px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #E9EAEB;
+}
+
+.logo-png{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 204px;
+    height: auto;
+    opacity: 0.4px;
+}
+
+.achievements{
+    width: 474px;
+    height: 352px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.achievements-1{
+    width: 447px;
+    height: 170px;
+    top: 319px;
+    left: 123px;
+    /* background-color: rgb(116, 170, 205); */
+    margin-right: 27px;
+    box-shadow: 0px 0px 24px 0px #08173529;
+    border-radius: 24px;
+}
+
+.achievements-1-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 40px;
+    border-bottom: 1px solid #E6E8F0;
+    padding: 10px 0px 10px 20px;
+}
+
+.achievements-1-title img{
+    width: 28px;
+    height: 31px;
+    color: #081735;
+}
+
+.achievements-1-title h1{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.achievements-1-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.achievements-1-body-box{
+    width: 123px;
+    height: 47px;
+    top: 94.5px;
+    left: 20px;
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.achievements-1-body-box h1{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+    padding: 0;
+}
+
+.achievements-1-body-box h2{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+    padding: 0;
+    color: #171717;
+}
+
+
+
+.achievements-2{
+    width: 290px;
+    height: 184px;
+    position: relative;
+    top: -10px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0px 0px 24px 0px #08173529;
+}
+
+.achievements-2-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+}
+
+.achievements-2-title img{
+    width: 56px;
+    height: 56.77px;
+    top: 15.21px;
+    left: 31.83px;
+}
+
+.achievements-2-title-data{
+    width: 65px;
+    height: 39.31px;
+    top: 24.33px;
+    left: 170.83px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.achievements-2-title-data h1{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0049C6;
+}
+
+.achievements-2-title-data h2{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #171717;
+}
+
+.achievements-2-body{
+    /* background-color: gray; */
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.achievements-2-body h1{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.achievements-2-body h2{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+/* ================================================================================================================================== */
+.login-main{
+    width: 50%;
+    height: 775px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.login-main-warper{
+    width: 742px;
+    height: 552.34px;
+    gap: 0px;
+    border-radius: 12px;
+    border: 1px solid #E9EAEB;
+    /* background-color: #0049C6; */
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px 0px #0A0D120D;
+}
+
+.login-main-head{
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #D5D7DA;
+}
+
+.login-main-head-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* background-color: pink; */
+    gap: 20px;
+}
+
+.login-main-head-title img{
+    width: 35.62px;
+    height: 40px;
+}
+
+.login-main-head-title h1{
+    font-family: Satoshi;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.login-main-head-quote h1{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.login-main-head-selection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-main-head-selection button{
+    width: 311px;
+    height: 60px;
+    padding: 16px 14px 16px 14px;
+    gap: 4px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d4d6d9;
+}
+
+.login-main-head-selection button h1{
+    border: 2px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.active{
+    background-color: #1670f0;
+    color: #fafafa;
+}
+
+.inactive{
+    background-color: #fafafa;
+    color: #414652;
+}
+
+.login-main-body{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 13px;
+    gap: 10px;
+}
+
+.login-main-body-boxes{
+    cursor: pointer;
+    width: 246px;
+    height: 34.59px;
+    padding: 16px 100px 16px 100px;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px;
+    opacity: 0px;
+    /* background-color: pink; */
+    border: 1px solid #D8DAE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.login-main-body-boxes img{
+    width: 24px;
+    height: 24px;
+    top: 0.43px;
+    left: 0.5px;
+}
+
+.login-main-body-boxes h1{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+}
+
+.login-main-footer h1{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* ========================================================================================= */
+@media (max-width: 770px) {
+    .login-hero {
+        display: none;
+    }
+    .login-main{
+        width: 100%;
+        height: 100%;
+    }
+    .login-main-warper{
+        width: 95%;
+    }
+    .login-main-head-selection{
+        width: 90%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}

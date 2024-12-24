@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.RepositoryPage {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.side-bar {
+  /* background-color: aqua; */
+  height: 100%;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #e9eaeb;
+  flex-direction: column;
+}
+
+.side-bar-main {
+  /* background-color: antiquewhite; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-bar-title {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 242px;
+  height: 92px;
+}
+
+.side-bar-title-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 5px;
+}
+
+.side-bar-title-content img {
+  width: 28.5px;
+  height: 32px;
+}
+
+.side-bar-title-content h1 {
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.side-bar-select select {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #d5d7da;
+  padding: 0px 10px 0px 10px;
+}
+
+.side-bar-options {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-bar-select select option h1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.side-bar-options button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px 8px 12px;
+  gap: var(--spacing-lg);
+  border-radius: 6px;
+  border: none;
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.btn-inactive {
+  background-color: #ffffff;
+  color: #414651;
+}
+
+.btn-active {
+  background-color: #1670f0;
+  color: white;
+}
+
+.side-bar-footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 5px;
+}
+
+.side-bar-footer button {
+  cursor: pointer;
+  width: 90%;
+  height: auto;
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  flex-direction: row;
+  color: #414651;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff;
+}
+
+/* ======================================================================================================= */
+.Repository-container {
+  background-color: #fafafa;
+  height: 100%;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Repository-nav {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #414651; */
+}
+
+.container-wrapper {
+  width: 97%;
+  border-radius: 12px;
+  height: 96%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e9eaeb;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
+}
+
+.container-top {
+  /* background-color: gainsboro; */
+  height: 22%;
+  width: 100%;
+  border-bottom: 1px solid #e9eaeb;
+}
+
+.container-top-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1% 2% 1% 2%;
+}
+
+.add-repo-btn {
+  background-color: #1670f0;
+  color: white;
+}
+
+.top-head-text h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181d27;
+}
+
+.top-head-text h2 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #414651;
+}
+
+.top-head-buttons {
+  width: 297px;
+  height: 40px;
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-head-buttons button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  /* padding: 10px 10px 10px 10px; */
+  border-radius: 8px;
+  border: 1px;
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 10px;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.container-top-body input {
+  width: 366px;
+  height: 44px;
+  padding: 5px 5px 5px 10px;
+  border-radius: 8px;
+  border: 1px;
+  background-color: white;
+  margin-left: 2%;
+  box-shadow: 0px 2px 4px 0px #0a0d120d;
+  border: 1px solid #d5d7da;
+}
+
+.container-top-body input:focus {
+  border: 1px solid #d5d7da;
+}
+
+.container-bottom {
+  /* background-color: antiquewhite; */
+  height: 78%;
+  width: 100%;
+}
+
+.container-box {
+  width: 100%;
+  height: 16.2%;
+  /* background-color: #1670f0; */
+  display: flex;
+  padding: 1px 0px 0.5px 0px;
+  align-items: center;
+  border-bottom: 1px solid #e9eaeb;
+}
+
+.container-box:hover {
+  background-color: #f5f5f5;
+}
+
+.container-class {
+  width: 414.5px;
+  height: 60px;
+  padding: 0px 24px 0px 24px;
+  gap: 12px;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.class-top {
+  width: auto;
+  height: 24px;
+  gap: 10px;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.class-top h1 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181d27;
+}
+
+.class-top h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #175cd3;
+  width: 59px;
+  height: 24px;
+  padding: 0;
+  border-radius: 100px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #b2ddff;
+  background-color: #f0f8ff;
+}
+
+.class-bottom {
+  width: auto;
+  height: 24px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.class-bottom h1 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181d27;
+}
+
+.class-bottom h1 i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1670f0;
+}
+
+.class-bottom h2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181d27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.class-bottom h3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181d27;
+}
+/* ========================================================================================= */
+@media (max-width: 770px) {
+  .side-bar {
+    display: none;
+  }
+  .Repository-container {
+    width: 100%;
+  }
+  .container-top {
+    height: auto;
+    padding: 0px 0px 3% 0px;
+  }
+  .container-top-head {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .class-bottom{
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .top-head-text h1 {
+    padding-bottom: 10px;
+  }
+  .top-head-buttons {
+    margin-bottom: 10px;
+  }
+  .container-top-body {
+    width: 100%;
+  }
+  .container-top-body input {
+    width: 90%;
+  }
+  .container-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    border-radius: 0px;
+    border: 1px solid #e9eaeb;
+  }
+  .Repository-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+    justify-content: space-between;
+  }
+  .Repository-nav-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 4%;
+    justify-content: space-between;
+  }
+  .NavLinks {
+    top: 10%;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 20px;
+    height: auto;
+    background-color: white;
+    border-bottom: 1px solid #e9eaeb;
+  }
+  .side-bar-select{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .side-bar-options button{
+    cursor: pointer;
+    width: 100%;
+    height: 44px;
+    font-family: Inter;
+    font-size: var(--Fontsizetext-md);
+    font-weight: 600;
+    line-height: var(--Lineheighttext-md);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #414651;
+    background-color: white;
+  }
+  .side-bar-options button:hover{
+    background-color: #f5f5f5;
+  }
+  .side-bar-options {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: auto;
+  }
+  .Repository-nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 4%;
+  }
+  .Repository-nav-logo img {
+    width: 28.5px;
+    height: 32px;
+  }
+  .Repository-nav-logo h1 {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .Repository-nav-menu {
+    margin-right: 3%;
+    width: 30px;
+    height: 30px;
+  }
+  .Repository-nav-menu i {
+    width: 100%;
+    height: 100%;
+    top: 3px;
+    left: 2px;
+    gap: 0px;
+    opacity: 0px;
+    color: #181d27;
+  }
+  .Repository-nav-menu i .menu-nav {
+    width: 100%;
+    height: 100%;
+    color: #181d27;
+  }
+  .Repository-nav {
+    
+    padding-bottom: 30px;
+    background-color: white;
+  }
+}
